@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Choose a guitar based on the most important criteria:  How cool do you look playing it?">
+    	<meta name="keywords" content="guitar, style, fashion, stage presence">
+
+		<title>PiK Landing Page</title>
+
+		<meta property="og:url"           content="http://www.guitpik.com" />
+	    <meta property="og:type"          content="website" />
+	    <meta property="og:title"         content="PiK" />
+	    <meta property="og:description"   content="Choose a guitar based on the most important criteria:  How cool do I look playing it?" />
+	    <meta property="og:image"         content="http://www.guitpik.com/sitepreview.jpg" />
+	    <meta property="fb:app_id" content="165683183774357" />
+		
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		
+
+
+	</head>
+
+	<body class="mainBody">
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=165683183774357";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!--HEADER-->
+
+		<header class="hide">
+			<div ID="textLogoContainer">
+				<img ID="textLogo" src="images/pikText.png" alt="PiK Text Logo"/>
+				<div class="fb-like" data-href="https://www.guitpik.com" data-width="200" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+			</div>
+		</header>
+
+		<section style="padding: 0">
+
+<!--OPENNING PAGE-->
+			<div ID="containerLogo"> 
+				<img ID="imgLogo" src="images/pikBannerLogo3_opt.png" alt="Pik Logo"/>
+				<div ID="bannerText">
+					<h3>Become a Rock God!</h3>
+					<h6><a href="#">(click to get started)</a></h6>
+				</div>
+			</div>
+
+<!--IMAGE UPLOAD & GUITAR CHOOSING CAROUSEL PAGE-->
+
+			<div ID="carousel" class="hide">
+	
+	<!-- IMAGE INPUT -->
+
+				<a ID="download" href="people/badBrimer.png" download>DOWNLOAD</a>
+
+	
+				<form ID="uploadForm">
+
+					<img ID="instructions" class="" src="images/instructionsWithDownload.png" alt="Site Instructions"/>
+
+					<img ID="uploadButton" class="hide" src="images/takeTheStageWithDownload.png" alt="Image Upload Button"/>
+
+					<input ID="imgInput" type="file"/>
+						
+					<img ID="userImage" class="hide" src="" alt="The Rock God, Formerly Know as You!"/>
+
+					<input ID="remove" class="hide" type="button" value="CHOKE!"/>
+
+				</form>
+
+	<!--Guitar Overlay-->
+ 					<div ID="guitarOverlay" class="hide"></div>
+	<!--GUITAR MODEL NAVIGATION BUTTON-->
+					
+				<div ID="containerGuitarNav" class="navPik"> 
+					<div ID="bannerSmallText">
+						<h4>ROCK GOD</h4>
+						<h5>Upload</h5>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+<!-- FOOTER -->
+
+		<footer class="hide">
+
+	<!--GUITAR COLOR NAVIGATION; 1st Level-->
+			<div ID="emptyDiv">
+				
+			</div>
+
+
+			<div ID="navContainer">
+
+				<nav ID="containerColorNav"> 
+					<ul>
+						<li class="red"></li>
+
+						<li class="green"></li>
+
+						<li class="antigua"></li>
+
+						<li class="orange"></li>
+
+						<li class="fireglow"></li>
+
+						<li class="blue"></li>
+
+						<li class="pink"></li>
+
+						<li class="yellow"></li>
+
+						<li class="purple"></li>
+
+						<li class="deepPurple"></li>
+
+						<li class="seafoam"></li>
+
+						<li class="deepRed"></li>
+
+						<li class="lightBlue"></li>
+
+						<li class="gold"></li>
+
+						<li class="redGray"></li>
+
+						<li class="greenYellow"></li>
+
+						<li class="jimmyHendrix"></li>
+
+						<li class="deepBlue"></li>
+
+						<li class="chartreuse"></li>
+
+					</ul>
+				</nav>
+
+		<!--GUITAR COLOR NAVAGATION; 2nd Level-->
+			
+				<nav ID="containerWoodNav"> 
+					<ul>
+
+						<li class="black"></li>
+
+						<li class="gray"></li>
+
+						<li class="white"></li>
+
+						<li class="blackWhiteStripe"></li>
+
+						<li class="blackWhiteSpiral"></li>
+
+						<li class="blackWhiteHalf"></li>
+
+						<li class="lightWood"></li>
+
+						<li class="darkWood"></li>
+
+						<li class="snakeSkin"></li>
+
+						<li class="greenPaisley"></li>
+
+						<li class="butterfly"></li>
+
+						<li class="batWing"></li>
+
+						<li class="americanSlang"></li>
+
+						<li class="bobMarley"></li>
+
+						<li class="kiss"></li>
+
+					</ul>
+				</nav>
+
+			</div>
+
+			<!-- VERTICLE CONTROL -->
+
+			<div ID="allSliders">
+
+				<form ID="verticleSlider">
+					<label class="leftSlider">Up</label>
+					<label class="rightSlider">Down</label>
+					<input ID="upDown" type=range max=10 min=-10 value=0 step="0.2">
+				</form>
+
+				<!-- HORIZONTAL CONTROL -->
+
+				<form ID="horizontalSlider">
+					<label class="leftSlider">Left</label>
+					<label class="rightSlider">Right</label>
+					<input ID="leftRight" type=range min=-30 max=30 value=0 step="0.2">
+				</form>
+
+				<!-- SCALE CONTROL -->
+
+				<form ID="scaleSlider">
+					<label class="leftSlider">Smaller</label>
+					<label class="rightSlider">Bigger</label>
+					<input ID="shrinkGrow" type=range min=-50 max=50 value=0 step="5">
+				</form>
+				
+				<!-- ROTATION CONTROL -->
+
+				<form ID="rotationSlider">
+					<label class="leftSlider">Lift</label>
+					<label class="rightSlider">Dip</label>
+					<input ID="liftDip" type=range min=-40 max=40 value=0 step="0.2">
+				</form>
+
+			</div>
+
+		</footer>
+
+		<script src="js/index2.js"></script>
+		
+	</body>
+</html>

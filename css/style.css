@@ -1,0 +1,657 @@
+html {
+  height: 100%;
+}
+
+.mainBody {
+  position: relative;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13.666px;
+  color: #FFF;
+  border: 0;
+  margin: 0;
+  padding: .5%;
+  overflow: hidden;
+  height: 100%;
+  background: url("../images/stage1.png") center bottom no-repeat fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*------------------Header----------------*/
+
+/*------------------OBVIOSLY----------------*/
+
+header {
+  float: right;
+  margin: 0;
+  padding: 0;
+  height: 5%;
+  width: 100%;
+}
+
+#textLogoContainer {
+  width: 15%;
+  float: right;
+}
+
+#textLogo {
+  opacity: .5;
+  width: 100%;
+  float: left;
+}
+
+.fb-like {
+  margin-left: 20%;
+}
+
+/*------------------OPENNING-----------------*/
+/*--------------------LOGO-------------------*/
+/*--------------------PAGE-------------------*/
+
+
+
+#containerLogo {
+  margin: 2% auto 0 auto;
+  padding: 1%;
+  bottom: 0;
+  max-width: 50em;
+  position: relative;
+}
+
+#imgLogo {
+  display: block;
+  width: 100%;
+  bottom: 0;
+
+}
+
+#bannerText {
+position: absolute;
+width: 50%;
+top: 81%;
+left: 50%;
+margin-left: -25%;
+
+}
+
+h3 {
+  font-size: 2em;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: -1px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 4px 8px black;
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  font-size: 1.5em;
+  
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0 4px 8px black;
+  margin: 0;
+  padding: 0;
+
+}
+
+/*----------------------UPLOAD----------------------*/
+/*---------------------CONTAINER----------------------*/
+
+
+#uploadForm {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#instructions {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#download {
+  position: absolute;
+  display: block;
+  left: 25%;
+  top: 23%;
+  z-index: 200;
+  font-size: 1.5em;
+  width: 60%;
+  opacity: 0;
+}
+
+#imgInput {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#uploadButton {
+  position: absolute;
+  top: 300px;
+  left: 225px;
+  margin-left: -200px;
+  margin-top: -75px;
+}
+
+/*------------remove the "No File Chosen" text-----------*/
+
+input[type="file"] {
+  opacity: 0;
+  color: transparent;
+  text-align: center;
+}
+
+#remove {
+  /*display: block;*/
+  position: absolute;
+  width: 100px;
+  left: 225px;
+  bottom: 0;
+  margin-left: -50px;
+  opacity: 0;
+}
+
+#remove:hover {
+  opacity: 0.5;
+  transition: 0.2s linear;
+}
+
+#userImage {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/*---------------------Main-----------------*/
+/*--------------------GUITAR-----------------*/
+/*-------------------SWITCHING-----------------*/
+/*-------------------Carousel-----------------*/
+
+
+#carousel {
+  position: relative;
+  width: 450px;
+  height: 600px;
+  margin: 7% auto 0 auto;  
+  padding: 0;
+  bottom: 0;
+}
+
+#guitarOverlay {
+  position: absolute;
+  /*overflow: visible;*/
+  /*Ican't remember why I set overflow to visible right now!*/
+  left: 50%;
+  top: 30%;
+  width: 400px;
+  height: 200px;
+  margin-left: -200px;
+  padding: 0;
+  transform: rotate(0);
+}
+
+.scale {
+  transform: scale(0);
+}
+
+.GibsonExplorer {
+  /*background: url("../images/webGit/GibsonExplorer-Black.png") top center no-repeat;*/
+  background-size: 100%;
+}
+
+.GibsonFlyingV {
+  /*background: url("../images/webGit/GibsonFlyingV-Black.png") top center no-repeat;*/
+  background-size: 100%;
+}
+
+.FenderStratocaster {
+  /*background: url("../images/webGit/FenderStratocaster-Red.png") top center no-repeat;*/
+  background-size: 100%;
+}
+
+.Rickenbacker {
+  /*background: url("../images/webGit/Rickenbacker-Black.png") top center no-repeat;*/
+  background-size: 100%;
+}
+
+.GibsonLesPaul {
+  /*background: url("../images/webGit/GibsonLesPaul-GreenPaisley.png") top center no-repeat;*/
+  background-size: 100%;
+}
+
+.FenderJazzmaster {
+  /*background: url("../images/webGit/FenderJazzmaster-Purple.png") top center no-repeat;*/
+  background-size: 100%;
+}
+
+p {
+  text-align: center;
+  font-size: 1.25em;
+  text-transform: capitalize;
+  text-shadow: 0 4px 8px black;
+  width: 300px;
+  position: absolute;
+  margin: 0 -150px;
+  left: 50%;
+  bottom: 0;
+}
+
+/*---------------------GUITAR---------------------*/
+/*---------------------MODEL----------------------*/
+/*-------------------NAVIGATION-------------------*/
+
+
+.navPik, .navExpl, .navFly, .navStrato, .navRick, .navLesPaul, .navJazz {
+  width: 12em;
+  height: 9.5em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: -79px;
+  margin-bottom: -63px;
+}
+
+.navPik {
+  background: url("../images/guitarButtons/navPik.png") top center no-repeat;
+  background-size: cover;
+}
+
+.navExpl {
+  background: url("../images/guitarButtons/navGibsonExplorer.png") top center no-repeat;
+  background-size: cover;
+}
+
+.navFly {
+  background: url("../images/guitarButtons/navGibsonFlyingV.png") top center no-repeat;
+  background-size: cover;
+}
+
+.navStrato {
+  background: url("../images/guitarButtons/navFenderStratocaster.png") top center no-repeat;
+  background-size: cover;
+}
+
+.navRick {
+  background: url("../images/guitarButtons/navRickenbacker.png") top center no-repeat;
+  background-size: cover;
+}
+
+.navLesPaul {
+  background: url("../images/guitarButtons/navGibsonLesPaul.png") top center no-repeat;
+  background-size: cover;
+}
+
+.navJazz {
+  background: url("../images/guitarButtons/navFenderJazzmaster.png") top center no-repeat;
+  background-size: cover;
+}
+
+#bannerSmallText {
+position: absolute;
+width: 100%;
+top: 51%;
+left: 50%;
+margin-left: -50%;
+
+}
+
+h4 {
+  font-size: 1.2em;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 2px;
+  padding: 0;
+  text-shadow: 0 4px 8px black;
+}
+
+h5 {
+  font-size: 1.1em;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: -7px 0 0;
+  padding: 0;
+  text-shadow: 0 4px 8px black;
+
+}
+
+/*-----------------Guitar--------------*/
+/*--------------Navigations------------*/
+/*-----------------COLORS--------------*/
+
+footer {
+  height: 100px;
+  position: relative;
+}
+
+#emptyDiv {
+  width: 25%;
+  height: 90px;
+  margin: 0;
+  float: left;
+  padding: 1%;
+}
+
+#navContainer {
+  height: 90px;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+#containerColorNav, #containerWoodNav {
+  /*position: relative;*/
+  margin: 5px auto 0 auto;
+  width: 100%;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin: 0 5px;
+  height: 25px;
+  width: 25px;
+  padding: 0;
+  background-size: cover;
+}
+
+li:active {
+  opacity: 0.5;
+}
+
+.red {
+  background: url("../images/colorButtons/pikRed.png") top center no-repeat;
+}
+
+.green {
+  background: url("../images/colorButtons/pikGreen.png") top center no-repeat;  
+}
+
+.orange {
+  background: url("../images/colorButtons/pikOrange.png") top center no-repeat; 
+}
+
+.fireglow {
+  background: url("../images/colorButtons/pikFireglow.png") top center no-repeat; 
+}
+
+.blue {
+  background: url("../images/colorButtons/pikBlue.png") top center no-repeat;
+}
+
+.pink {
+  background: url("../images/colorButtons/pikPink.png") top center no-repeat;
+}
+
+.purple {
+  background: url("../images/colorButtons/pikPurple.png") top center no-repeat;
+}
+
+.deepPurple {
+  background: url("../images/colorButtons/pikDeepPurple.png") top center no-repeat;
+}
+
+.yellow {
+  background: url("../images/colorButtons/pikYellow.png") top center no-repeat;
+}
+
+.seafoam {
+  background: url("../images/colorButtons/pikSeafoamGreen.png") top center no-repeat;
+}
+
+.deepRed {
+  background: url("../images/colorButtons/pikDeepRed.png") top center no-repeat;
+}
+
+.lightBlue {
+  background: url("../images/colorButtons/pikLightBlue.png") top center no-repeat;
+}
+
+.antigua {
+  background: url("../images/colorButtons/pikAntigua.png") top center no-repeat;
+}
+
+.deepBlue {
+  background: url("../images/colorButtons/pikDeepBlue.png") top center no-repeat;
+}
+
+.greenPaisley {
+  background: url("../images/colorButtons/pikGreenPaisley.png") top center no-repeat;
+}
+
+.butterfly {
+  background: url("../images/colorButtons/pikButterfly.png") top center no-repeat;
+}
+
+.gold {
+  background: url("../images/colorButtons/pikGold.png") top center no-repeat;
+}
+
+.redGray {
+  background: url("../images/colorButtons/pikRedGray.png") top center no-repeat;
+}
+
+.snakeSkin {
+  background: url("../images/colorButtons/pikSnakeSkin.png") top center no-repeat;
+}
+
+.greenYellow {
+  background: url("../images/colorButtons/pikGreenYellow.png") top center no-repeat;
+}
+
+.jimmyHendrix {
+  background: url("../images/colorButtons/pikJimmyHendrix.png") top center no-repeat;
+}
+
+.blackWhiteStripe {
+  background: url("../images/colorButtons/pikBlackWhiteStripe.png") top center no-repeat;
+}
+
+.blackWhiteSpiral {
+  background: url("../images/colorButtons/pikBlackWhiteSpiral.png") top center no-repeat;
+}
+
+.blackWhiteHalf {
+  background: url("../images/colorButtons/pikBlackWhiteHalf.png") top center no-repeat;
+}
+
+.black {
+  background: url("../images/colorButtons/pikBlackBlack.png") top center no-repeat;
+}
+
+.white {
+  background: url("../images/colorButtons/pikWhite.png") top center no-repeat;  
+}
+
+.gray {
+  background: url("../images/colorButtons/pikGray.png") top center no-repeat; 
+}
+
+.lightWood {
+  background: url("../images/colorButtons/pikLightWood.png") top center no-repeat;
+}
+
+.darkWood {
+  background: url("../images/colorButtons/pikDarkWood.png") top center no-repeat;
+}
+
+.batWing {
+  background: url("../images/colorButtons/pikBatWing.png") top center no-repeat;  
+}
+
+.americanSlang {
+  background: url("../images/colorButtons/pikAmericanSlang.png") top center no-repeat; 
+}
+
+.bobMarley {
+  background: url("../images/colorButtons/pikBobMarley.png") top center no-repeat;
+}
+
+.kiss {
+  background: url("../images/colorButtons/pikKiss.png") top center no-repeat;
+}
+
+.chartreuse {
+  background: url("../images/colorButtons/pikChartreuse.png") top center no-repeat;
+}
+/*--HIDE CLASS--*/
+
+.hide {
+  display: none;
+}
+
+/*--------------------Guitar---------------*/
+/*-------------------POSITION---------------*/
+/*--------------------SLIDER----------------*/
+
+#allSliders {
+  position: absolute;
+  padding: 1%;
+  margin-right: 1%;
+  height: 120px;
+  width: 25%;
+  top: -65px;
+  right: 0;
+}
+
+#verticleSlider, #horizontalSlider, #rotationSlider, #scaleSlider {
+  width: 100%;
+  /*margin-right: 5%;*/
+  float: right;
+}
+
+#upDown, #leftRight, #liftDip, #shrinkGrow {
+  width: 100%;
+  clear: both;
+}
+
+.leftSlider {
+  display: block;
+  height: 10px;
+  float: left;
+}
+
+.rightSlider {
+  display: block;
+  height: 10px;
+  float: right;
+}
+
+/*--------POPUP WINDOW-------------*/
+
+.popUpBody {
+  position: relative;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13.666px;
+  color: #FFF;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+#popUpBackground {
+  position: absolute;
+  width: 100%;
+}
+
+.popUpHeader {
+  position: relative;
+  width: 100%;
+  height: 5%;
+  padding: 0;
+  bottom: 0;
+  margin-bottom: 55px;
+  float: none;
+}
+
+#popUpUserImage {
+  margin-top: 0;
+}
+
+#popUpContainer {
+  position: relative;
+  width: 450px;
+  height: 600px;
+  margin: 0 auto;  
+  padding: 0;
+  bottom: 0;
+}
+
+#popUpUserGuitar {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 400px;
+  height: 200px;
+  margin-left: -200px;
+  padding: 0;
+  transform: rotate(0);
+}
+
+
+
+/*@media only screen and (max-width: 1200px) {
+  
+  #carousel {
+    margin: 9% auto 0 auto;
+  }
+}*/
+
+/*@media only screen and (max-width: 900px) and (min-width: 600px) {
+  
+  #carousel {
+    margin: 12% auto 0 auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  
+  #containerLogo {
+  margin: 8% auto 0 auto;
+  max-width: 55em;
+  position: relative;
+}
+
+  #carousel {
+    margin: 10% auto 0 auto;
+  }
+
+@media only screen and (max-width: 530px) {
+
+  #containerLogo {
+  margin: 30% auto 0 auto;
+  max-width: 55em;
+  position: relative;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h6 {
+  font-size: 1em;
+}*/
